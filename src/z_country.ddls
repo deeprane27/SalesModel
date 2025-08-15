@@ -1,0 +1,10 @@
+@EndUserText.label: 'Country Master'
+@AbapCatalog.tableCategory: #TRANSPARENT
+@AbapCatalog.deliveryClass: #A
+@AbapCatalog.dataMaintenance: #ALLOWED
+define table z_country {
+  key client        : abap.clnt not null;
+  key country_code  : abap.char(3) not null;  // ISO 3166-1 alpha-3
+  country_name      : abap.char(60);
+  region            : abap.char(30);
+}

@@ -1,0 +1,12 @@
+@EndUserText.label: 'Sales Order Header (Global)'
+@AbapCatalog.tableCategory: #TRANSPARENT
+@AbapCatalog.deliveryClass: #A
+@AbapCatalog.dataMaintenance: #ALLOWED
+define table z_salesorder {
+  key client        : abap.clnt not null;
+  key so_id         : abap.char(14) not null;   // e.g., SO000000012345
+  customer_id       : abap.char(10);
+  order_date        : abap.dats;
+  total_amount      : abap.curr(15,2);
+  currency_code     : abap.cuky;
+}
