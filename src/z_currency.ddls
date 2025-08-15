@@ -1,9 +1,0 @@
-@EndUserText.label: 'Currency Master'
-@AbapCatalog.tableCategory: #TRANSPARENT
-@AbapCatalog.deliveryClass: #A
-@AbapCatalog.dataMaintenance: #ALLOWED
-define table z_currency {
-  key client        : abap.clnt not null;
-  key currency_code : abap.cuky not null;   // e.g., USD, EUR
-  currency_name     : abap.char(30);
-}

@@ -1,5 +1,0 @@
-@EndUserText.label: 'Sales Analytics Service Definition'
-define service ZSD_SALES {
-  expose view ZV_SALES_OVERVIEW  as SalesOverview;
-  expose view ZV_SALES_AGGR      as SalesAggregation;
-}
