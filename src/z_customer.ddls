@@ -1,0 +1,14 @@
+@EndUserText.label: 'Customer Master (Global)'
+@AbapCatalog.tableCategory: #TRANSPARENT
+@AbapCatalog.deliveryClass: #A
+@AbapCatalog.dataMaintenance: #ALLOWED
+define table z_customer {
+  key client        : abap.clnt not null;
+  key customer_id   : abap.char(10) not null;
+  name              : abap.char(60);
+  email             : abap.char(100);
+  phone             : abap.char(30);
+  city              : abap.char(40);
+  country_code      : abap.char(3);          // ISO country code
+  created_at        : abap.tims;
+}
