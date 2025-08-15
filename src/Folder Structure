@@ -1,0 +1,17 @@
+ z_customer.ddls
+ z_product.ddls
+  z_currency.ddls
+  z_country.ddls
+  z_salesorder.ddls
+  z_salesitem.ddls
+
+  zcl_load_global_sales.clas.abap
+  zcl_load_global_sales.clas.xml
+
+  zv_sales_overview.ddlx
+  zv_sales_aggr.ddlx
+
+  zsd_sales.srvd
+  zsb_sales.srvb
+
+  README.md
